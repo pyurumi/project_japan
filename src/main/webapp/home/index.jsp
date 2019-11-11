@@ -10,11 +10,18 @@
 <script src="../javascript/mainmenu.js"></script>
 <script src="../javascript/timer.js"></script>
 
+
 <link rel="stylesheet" type="text/css" href="../css/mainmenu.css">
 
 </head>
 <body>
 	<div class="top">
+		<div class="top_menu">
+			<ul class="login">
+				<li><a href="#">로그인</a></li>
+				<li><a href="../home/calendar.jsp">출석체크</a></li>
+			</ul>
+		</div>
 		<div class="top_title" align="center" >
 			<p class="title">
 				<a href="../home/index.jsp">勉強しましょう</a>

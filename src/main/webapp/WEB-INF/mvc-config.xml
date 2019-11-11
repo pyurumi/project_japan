@@ -12,8 +12,7 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		p:driverClassName="oracle.jdbc.driver.OracleDriver"
-		p:url="jdbc:oracle:thin:@127.0.0.1:1521:a" p:username="hr"
-		p:password="hr">
+		p:url="jdbc:oracle:thin:@127.0.0.1:1521:a" p:username="pyurumi"	p:password="pyurumi">
 	</bean>
 	<bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean"
