@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.center_top{
+	margin: 0;
+	padding: 10px;
+	background:#dcdcdc ;
+	font-size: 0.8em;
+	text-indent: 2em;
+	color:white;
+}
+
+
+.center_body{
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	
+}

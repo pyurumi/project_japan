@@ -59,21 +59,29 @@ body {
 	vertical-align: baseline;
 	text-decoration: none;
 	font-size: 2.2em;
-	color: #fff;
+	color: white;
 }
-
-.menu {
-	background: #b1e8ed;
-	margin: 0 650px;
-	padding: 30px;
+.mainmenu_bar{
 	text-align: center;
 }
+.mainmenu_bar ul {
+	background: #b1e8ed;
+	position:relative;
+	padding: 20px;
+	text-align: center;
+	display:inline-block;
+	margin: 0 auto;
+	
+}
 
-.menu li {
+.mainmenu_bar ul li {
 	float: left;
 	list-style: none;
 	position: relative;
 	color: white;
+	display:outside;
+	
+	
 }
 
 .menu li:hover {

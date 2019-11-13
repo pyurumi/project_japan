@@ -1,79 +1,47 @@
 package model;
 
-import java.sql.Date;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public class User {
-	private int Usernum;
-	private String Userid;
-	private String password;
-	private String UserName;
-	private Date birthday;
-	private String gender;
-	private String address;
-	private String phone;
+	@NotEmpty(message = "입력하세요")
+	private String user_id;
+	@NotEmpty(message = "입력하세요")
+	private String user_password;
+	@NotEmpty(message = "입력하세요")
+	private String user_name;
+	@NotEmpty(message = "입력하세요")
+	private String user_email;
 
-	public int getUsernum() {
-		return Usernum;
+	public String getUser_id() {
+		return user_id;
 	}
 
-	public void setUsernum(int usernum) {
-		Usernum = usernum;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
-	public String getUserid() {
-		return Userid;
+	public String getUser_password() {
+		return user_password;
 	}
 
-	public void setUserid(String userid) {
-		Userid = userid;
+	public void setUser_password(String user_password) {
+		this.user_password = user_password;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getUser_name() {
+		return user_name;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setUser_name(String user_name) {
+		this.user_name = user_name;
 	}
 
-	public String getUserName() {
-		return UserName;
+	public String getUser_email() {
+		return user_email;
 	}
 
-	public void setUserName(String userName) {
-		UserName = userName;
-	}
-
-	public Date getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setUser_email(String user_email) {
+		this.user_email = user_email;
 	}
 
 }

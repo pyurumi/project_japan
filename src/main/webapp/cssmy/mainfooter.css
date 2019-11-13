@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.footer{
+	margin: 0;
+	padding: 5px;
+	background:#b1e8ed ;
+
+}
+.footer_name{
+	margin: 0;
+	padding: 10px;
+	background:#b1e8ed ;
+	font-size: 0.8em;
+	color:white;
+	text-align: right;
+}
+
+
+.center_body{
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	
+}
