@@ -4,8 +4,19 @@
 <mapper namespace="mapper.myMapper">
 	<!-- Entry User -->
 	<insert id="insertUser" parameterType="model.User">
-		insert into user_account values(#{user_id}, #{user_password}, #{user_name}, #{user_email})
+		insert into user_account values(#{user_id}, #{password}, #{user_name}, #{email})
 	</insert>
+	
+	<!-- Login User -->
+	<select id="getUser" resultType="model.User" parameterType="String">
+		select * from user_account where user_id=#{id}
+	</select>
+	<select id="getPassword" resultType="String" parameterType="String">
+		select password from user_account where user_id=#{id}
+	</select>
+	<select id="checkId" parameterType="String" resultType="Integer">
+		select count(*) as cnt from user_account where user_id=#{id}
+	</select>
 </mapper>
 
 

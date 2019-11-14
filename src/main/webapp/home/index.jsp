@@ -20,7 +20,7 @@
 	<div class="top">
 		<div class="top_menu">
 			<ul class="login">
-				<li><a href="#">로그인</a></li>
+				<li><a href="../home/login.html">로그인</a></li>
 				<li><a href="#">출석체크</a></li>
 			</ul>
 		</div>
