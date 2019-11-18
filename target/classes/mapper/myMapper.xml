@@ -17,6 +17,32 @@
 	<select id="checkId" parameterType="String" resultType="Integer">
 		select count(*) as cnt from user_account where user_id=#{id}
 	</select>
+	
+	<!-- Bbs_word -->
+	<select id="getMaxBbsId" resultType="Integer">
+		select max(seqno) as max_id from bbs_word
+	</select>
+	<insert id="putBBS_word" parameterType="model.Bbs_word">
+		insert into bbs_word values(#{seqno},#{title},#{content},#{rank},#{bbs_date})
+	</insert>
+	
+	<select id="getBbs_wordList" resultType="model.Bbs_word">
+		select seqno, title, content, rank, bbs_date from(
+			select a.*, rownum rn from
+				(
+					(
+						(select * from bbs_word order by seqno desc)a
+					)
+				)
+		)where rn between #{startRow} and #{endRow}
+	</select>
+	<select id="getBbs_wordCount" resultType="Integer">
+		select count(*) as num from bbs_word
+	</select>
+	<select id="getBbs_wordDetail" resultType="model.Bbs_word">
+		select * from bbs where seqno=#{seqno}
+	</select>
+	
 </mapper>
 
 

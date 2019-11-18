@@ -37,30 +37,17 @@
 		<div class="mainmenu_bar">
 			<ul class="menu">
 				<li><a href="../home/index.jsp">ホーム</a></li>
-				<li><a href="#">単語</a>
-					<ul>
-						<li><a href="../home/index.html?BODY=bbs_n5.jsp">N5</a></li>
-						<li><a href="#">N4</a></li>
-						<li><a href="#">N3</a></li>
-						<li><a href="#">N2</a></li>
-						<li><a href="#">N1</a></li>
-					</ul>
+				<li>
+					<a href="../home/index.html?BODY=bbs_word.jsp">単語</a>
 				</li>
-				<li><a href="#">文法</a>
-					<ul>
-						<li><a href="#">N5</a></li>
-						<li><a href="#">N4</a></li>
-						<li><a href="#">N3</a></li>
-						<li><a href="#">N2</a></li>
-						<li><a href="#">N1</a></li>
-					</ul>
+				<li>
+					<a href="../home/index.html?BODY=bbs_gram.jsp">文法</a>
 				</li>
-				<li><a href="#">方言</a>
-					<ul>
-						<li><a href="#">大阪</a></li>
-						<li><a href="#">沖縄</a></li>
-						<li><a href="#">長崎</a></li>
-					</ul>
+				<li>
+					<a href="#">方言</a>
+				</li>
+				<li>
+					<a href="#">자유게시판</a>
 				</li>
 			</ul>
 		</div>
@@ -68,7 +55,7 @@
 	
 	<div class="center">
 		<div class="center_top">
-				<span id="breadcrumb_line">	생활코딩</span>
+				<span id="breadcrumb_line"> 일본어공부 </span>
 		</div>
 		
 		<div id="content" class="center_body">

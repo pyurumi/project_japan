@@ -3,8 +3,9 @@
  */
 
 $(document).ready(function(){
-	idCheck();
+
 	formCheck(fm);
+	idCheck();
 });
 
 function formCheck(fm) {
