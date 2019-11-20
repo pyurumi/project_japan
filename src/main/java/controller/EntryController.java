@@ -25,7 +25,7 @@ public class EntryController {
 
 	@RequestMapping(value = "/entry/home.html")
 	public ModelAndView home() {
-		ModelAndView mav = new ModelAndView("home/frame");
+		ModelAndView mav = new ModelAndView("home/index");
 		mav.addObject("BODY", "loginResult.jsp");
 		return mav;
 	}

@@ -23,11 +23,11 @@
 		select max(seqno) as max_id from bbs_word
 	</select>
 	<insert id="putBBS_word" parameterType="model.Bbs_word">
-		insert into bbs_word values(#{seqno},#{title},#{content},#{rank},#{bbs_date})
+		insert into bbs_word values(#{seqno},#{title},#{content},#{rank},#{id},#{bbs_date})
 	</insert>
 	
 	<select id="getBbs_wordList" resultType="model.Bbs_word">
-		select seqno, title, content, rank, bbs_date from(
+		select seqno, title, content, rank, id, bbs_date from(
 			select a.*, rownum rn from
 				(
 					(

@@ -6,7 +6,7 @@ import model.Bbs_word;
 import model.Condition;
 
 public interface ReadCatalog {
-	List<Bbs_word> readBbs(Condition c);
+	List<Bbs_word> readBbs_word(Condition c);
 	Integer getBbs_wordCount();
 	Bbs_word getBbs_wordDetail(Integer id);
 }

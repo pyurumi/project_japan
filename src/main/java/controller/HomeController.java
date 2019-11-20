@@ -18,13 +18,7 @@ public class HomeController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/home/login.html", method = RequestMethod.GET)
-	public ModelAndView loginForm() {
-		ModelAndView mav = new ModelAndView("home/index");
-		mav.addObject(new User());
-		mav.addObject("BODY", "login.jsp");
-		return mav;
-	}
+
 
 	@RequestMapping(value = "/home/bbs_word.html", method = RequestMethod.GET)
 	public ModelAndView bbs_wordForm() {
@@ -33,4 +27,5 @@ public class HomeController {
 		mav.addObject("BODY", "bbs_word.jsp");
 		return mav;
 	}
+	
 }

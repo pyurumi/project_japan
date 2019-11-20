@@ -19,7 +19,7 @@ import model.User;
 public class LoginController {
 	@Autowired
 	private LoginCatalog loginCatalog;
-	@RequestMapping(value="/login/login.html", method=RequestMethod.POST)
+	@RequestMapping(value="/login/index.html", method=RequestMethod.POST)
 	public ModelAndView login(@ModelAttribute("guest") User guest, BindingResult br, HttpSession session) {
 		ModelAndView mav = new ModelAndView("home/index");
 		if(br.hasErrors()) {
@@ -31,13 +31,17 @@ public class LoginController {
 			mav.addObject("BODY", "loginResult.jsp");
 		}else {
 			session.setAttribute("loginUser", guest.getUser_id());
+			mav.addObject("BODY", "loginResult.jsp");
 		}
 		return mav;
 	}
-	@RequestMapping(value="/login/login.html")
+	@RequestMapping(value="/login/login.html", method = RequestMethod.GET)
 	public ModelAndView toLogin(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("home/login");
+		ModelAndView mav = new ModelAndView("home/index");
 		request.setAttribute("guest", new User());
+		mav.addObject(new User());
+		mav.addObject("BODY", "login.jsp");
 		return mav;
 	}
+
 }

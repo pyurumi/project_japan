@@ -14,7 +14,7 @@ public class ReadCatalogImpl implements ReadCatalog {
 	@Autowired
 	private ReadDao readDao;
 	
-	public List<Bbs_word> readBbs(Condition c) {
+	public List<Bbs_word> readBbs_word(Condition c) {
 		return readDao.readBbs_word(c);
 	}
 
